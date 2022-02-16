@@ -73,6 +73,11 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export TARGET_ARCH="arm"
     export TARGET_DEVICE_ALT="a7_30hc"
 
+    # Partitions
+    export FOX_RECOVERY_INSTALL_PARTITION="/dev/recovery"
+    export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mmcblk0p5"
+    export FOX_RECOVERY_BOOT_PARTITION="/dev/bootimg"
+
     # R11.1 Settings
     export FOX_VERSION="R11.1_0"
     export OF_MAINTAINER="Sushrut1101"
